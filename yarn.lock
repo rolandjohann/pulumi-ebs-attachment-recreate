@@ -184,7 +184,7 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@pulumi/aws@^5.35.0", "@pulumi/aws@^5.42.0":
+"@pulumi/aws@^5.35.0":
   version "5.42.0"
   resolved "https://registry.yarnpkg.com/@pulumi/aws/-/aws-5.42.0.tgz#ba035c893b71923fc99150ec96b935a741d7a60a"
   integrity sha512-1h7Q5DjwoWVGxhBMcNragx/Q1US1KT7g29Tk3RghTg/9N7rGUbzTQKEXSrGgRSjGA/aKTbU+gt5A9ZmhONLiLg==
@@ -196,10 +196,21 @@
     read-package-tree "^5.2.1"
     resolve "^1.7.1"
 
-"@pulumi/awsx@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@pulumi/awsx/-/awsx-1.0.4.tgz#50bc760574bc02b0615c7b4131e07d97b839dc62"
-  integrity sha512-CK17bk1CrEqMLY1220USZej3pmH1oxnRL+J2zvZ+rvfi1gJkNI9bx8rPKrV1bX4EFQJdKvN4bCm+Jca2E34pMw==
+"@pulumi/aws@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@pulumi/aws/-/aws-6.0.2.tgz#2f358ed7ff986d45bbab0b341ac00f683fc2167e"
+  integrity sha512-KVBGrfcufE8TeFUS7xkcOof8t7ORLvC7wBJezQPspz77dXnTBgePrdbqZyTRT3bBFqjc05GpYX8q2Cesm6B2dQ==
+  dependencies:
+    "@pulumi/pulumi" "^3.0.0"
+    builtin-modules "3.0.0"
+    mime "^2.0.0"
+    read-package-tree "^5.2.1"
+    resolve "^1.7.1"
+
+"@pulumi/awsx@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@pulumi/awsx/-/awsx-1.0.5.tgz#63f446a8b2840e9394b7afa2e080129c0f170fdf"
+  integrity sha512-iGkDzPalPhzRlfqCaWgwJkaA8EfgPwzWkcqdg0TgcnUefNwKGEXfEelORxMXKxZe5M0VV3U3ljrEq6P0SLCtWg==
   dependencies:
     "@pulumi/aws" "^5.35.0"
     "@pulumi/docker" "^3.6.1"
@@ -222,10 +233,41 @@
     "@pulumi/pulumi" "^3.0.0"
     semver "^5.4.0"
 
-"@pulumi/pulumi@^3.0.0", "@pulumi/pulumi@^3.78.1":
+"@pulumi/pulumi@^3.0.0":
   version "3.78.1"
   resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-3.78.1.tgz#d100b881957aa5950122d02523ae3ec59ed3b0a1"
   integrity sha512-FjZaHBVILd703u88Cigw03ogW371jw/KC6zqL2TBm9AbTLkSPU3+O0jEuuFBrGCt49H1R76o9wDu8xzGI10XfQ==
+  dependencies:
+    "@grpc/grpc-js" "^1.8.16"
+    "@logdna/tail-file" "^2.0.6"
+    "@opentelemetry/api" "^1.2.0"
+    "@opentelemetry/exporter-zipkin" "^1.6.0"
+    "@opentelemetry/instrumentation" "^0.32.0"
+    "@opentelemetry/instrumentation-grpc" "^0.32.0"
+    "@opentelemetry/resources" "^1.6.0"
+    "@opentelemetry/sdk-trace-base" "^1.6.0"
+    "@opentelemetry/sdk-trace-node" "^1.6.0"
+    "@opentelemetry/semantic-conventions" "^1.6.0"
+    "@pulumi/query" "^0.3.0"
+    execa "^5.1.0"
+    google-protobuf "^3.5.0"
+    ini "^2.0.0"
+    js-yaml "^3.14.0"
+    minimist "^1.2.6"
+    normalize-package-data "^3.0.0"
+    pkg-dir "^7.0.0"
+    read-package-tree "^5.3.1"
+    require-from-string "^2.0.1"
+    semver "^7.5.2"
+    source-map-support "^0.5.6"
+    ts-node "^7.0.1"
+    typescript "~3.8.3"
+    upath "^1.1.0"
+
+"@pulumi/pulumi@^3.79.0":
+  version "3.79.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-3.79.0.tgz#555f5e26b3006d7b7cf5782be670950ceb6da3c8"
+  integrity sha512-BtycJsN073tcrFfAegz8gQF78N+EzjayzFxHwn8RHJ2suENGfQ5GWvI1z6/umxCx8SamOrz8d7rinRRDybPkPA==
   dependencies:
     "@grpc/grpc-js" "^1.8.16"
     "@logdna/tail-file" "^2.0.6"
