@@ -1,0 +1,7 @@
+#cloud-config
+users:
+  - name: ops
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh-authorized-keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL42arO+7LDs8XF/Fz/Pesu0Y6ORrY34R86SwmxNA94y
