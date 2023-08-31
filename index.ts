@@ -85,7 +85,7 @@ const webInstance = new aws.ec2.Instance("web", {
   },
 }, {
   // necessary since volumeDetachment doesn't seem to respect stopInstanceBeforeDetaching
-  deleteBeforeReplace: true
+  // deleteBeforeReplace: true
 });
 
 const webDataEbs = new aws.ebs.Volume("web", {
@@ -96,7 +96,7 @@ const webDataEbs = new aws.ebs.Volume("web", {
 
 //  replacing the ec2 instance results in the attachment not being replaced.
 //  The replacement crashes with the message that the volume is attached to the old instance
-const webDataVolumeAttachment = new aws.ec2.VolumeAttachment('web-analytics-data', {
+const webDataVolumeAttachment = new aws.ec2.VolumeAttachment('web-data', {
   instanceId: webInstance.id,
   volumeId: webDataEbs.id,
   deviceName: dataDiskDeviceName,
