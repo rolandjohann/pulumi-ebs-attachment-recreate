@@ -6,9 +6,9 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/index.ts b/index.ts
---- a/index.ts	(revision 65e3b052798b1179c4563f70e57eaf8169ee1e01)
-+++ b/index.ts	(date 1693485478136)
-@@ -96,14 +96,14 @@
+--- a/index.ts	(revision 6f125c040f26717dc2a44aa687646149b7688785)
++++ b/index.ts	(date 1693486814750)
+@@ -100,14 +100,14 @@
  
  //  replacing the ec2 instance results in the attachment not being replaced.
  //  The replacement crashes with the message that the volume is attached to the old instance

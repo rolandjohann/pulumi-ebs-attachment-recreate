@@ -6,14 +6,14 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/index.ts b/index.ts
---- a/index.ts	(revision 65e3b052798b1179c4563f70e57eaf8169ee1e01)
-+++ b/index.ts	(date 1693485137837)
-@@ -85,7 +85,7 @@
+--- a/index.ts	(revision 6f125c040f26717dc2a44aa687646149b7688785)
++++ b/index.ts	(date 1693486752747)
+@@ -88,7 +88,7 @@
    },
- }, {
-   // necessary since volumeDetachment doesn't seem to respect stopInstanceBeforeDetaching
--  // deleteBeforeReplace: true
-+  deleteBeforeReplace: true
- });
+   {
+     // necessary since volumeDetachment doesn't seem to respect stopInstanceBeforeDetaching
+-    // deleteBeforeReplace: true
++    deleteBeforeReplace: true
+   },
+ )
  
- const webDataEbs = new aws.ebs.Volume("web", {
