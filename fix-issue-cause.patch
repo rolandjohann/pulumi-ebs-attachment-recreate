@@ -1,0 +1,33 @@
+Subject: [PATCH] resolve issue: remove `VolumeAttachment` which stops the instance first. Then we can reintroduce the attachment
+---
+Index: index.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.ts b/index.ts
+--- a/index.ts	(revision 65e3b052798b1179c4563f70e57eaf8169ee1e01)
++++ b/index.ts	(date 1693485478136)
+@@ -96,14 +96,14 @@
+ 
+ //  replacing the ec2 instance results in the attachment not being replaced.
+ //  The replacement crashes with the message that the volume is attached to the old instance
+-const webDataVolumeAttachment = new aws.ec2.VolumeAttachment('web-data', {
+-  instanceId: webInstance.id,
+-  volumeId: webDataEbs.id,
+-  deviceName: dataDiskDeviceName,
+-
+-  // doesn't do anything
+-  stopInstanceBeforeDetaching: true,
+-})
++// const webDataVolumeAttachment = new aws.ec2.VolumeAttachment('web-data', {
++//   instanceId: webInstance.id,
++//   volumeId: webDataEbs.id,
++//   deviceName: dataDiskDeviceName,
++//
++//   // doesn't do anything
++//   stopInstanceBeforeDetaching: true,
++// })
+ 
+ const webEIP = new aws.ec2.Eip('web', {
+   vpc: true,
